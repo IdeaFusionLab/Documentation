@@ -41,13 +41,17 @@ Podemos ejecutar el bot para ver que funciona y que los requerimientos junto con
 **NOTA:** Esto te bloqueará la terminal. Puedes hacer Ctrl + C para cerrar el proceso y volver a hacer login. Pero también puedes ejecutar el comando de la siguiente manera y que se ejecute en segundo plano: `python3 bot.py &`. Y luego patar el proceso con `kill PID_del_proceso`.
 
 **Mantener el bot siempre activo**
-Para mantener el bot siempre activo deberemos crear un fichero en la ruta `/etc/systemd/system/`. El fichero se llamará `discord-bot.service`. siguiendo la nomenclatura de los ya existentes:
-FOTO AQUI
+Para mantener el bot siempre activo deberemos crear un fichero en la ruta `/etc/systemd/system/`. El fichero se llamará `discord-bot.service`. siguiendo la nomenclatura de los ya existentes:  
 
-Puedes crear el fichero con el comando nano. La plantilla del fichero será esta:
-FOTO PLANTILLA
-Y aquí un ejemplo de uno ya configurado:
-FOTO ARBUS YT
+![Nomenclatura de servicios](https://raw.githubusercontent.com/IdeaFusionLab/Documentation/develop/images/servicios.png)  
+
+Puedes crear el fichero con el comando nano. La plantilla del fichero será esta:  
+
+![Plantilla de servicios](https://raw.githubusercontent.com/IdeaFusionLab/Documentation/develop/images/plantillaServicio.png)   
+
+Y aquí un ejemplo de uno ya configurado:  
+
+![Plantilla de ArbusYT service](https://raw.githubusercontent.com/IdeaFusionLab/Documentation/develop/images/servicioYT.png) 
 
 Se deberán cambiar los siguientes campos:  
 - **Description:** Descripción genérica de lo que realiza el servicio. En este caso ejecutar un bot.
